@@ -27,8 +27,7 @@ Cred <- OAuthFactory$new(consumerKey=consumerKey,
 Cred$handshake(cainfo = system.file('CurlSSL', 'cacert.pem', package = 'RCurl')) #There is URL in Console. You need to go to it, get code and enter it on Console
 
 save(Cred, file='twitter authentication.Rdata')
-load('twitter authentication.Rdata') #Once you launch the code first time, you can start from this line in the future (libraries should be connected)
-registerTwitterOAuth(Cred)
+load('twitter authentication.Rdata') #Once you launch the code first time, you can start from this line in the future (
 
 #the function of tweets accessing and analyzing
 search <- function(searchterm)
